@@ -41,7 +41,6 @@ function setup() {
 
 	treeObj=new tree(1050,580);
 	groundObject=new ground(width/2,600,width,20);
-  //create launcherObject here
   launcherObject = new Launcher(stoneObj.body,{x:235,y:420});
 
 
@@ -49,7 +48,7 @@ function setup() {
 }
 
 function draw() {
-
+Engine.update(engine);
   background(230);
   textSize(25);
   text("Press Space to get a second Chance to Play!!",50 ,50);
